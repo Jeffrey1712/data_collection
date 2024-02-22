@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the page</title>
+    <!-- Embedded styling -->
+    <style type="text/css">
+    /* This is a CSS comment */
+    /* Creating a flexbox*/
+    /* parent element */
+    .flex-container {
+      /* necessary to create une flexbox */
+      display: flex;
+      /* direction of the children elements */
+      flex-direction: row;
+      /* line break to adapt to screen size */
+      flex-wrap: wrap;
+      /* alignment of the children elements */
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .flex-item1 {
+      /* change order of children element */
+      order: 2;
+    }
+    .flex-item2 {
+      /* change order of children element */
+      order: 1;
+    }
+    .flex-item3 {
+      /* change order of children element */
+      order: 3;
+    }
+    .flex-item4 {
+      /* change order of children element */
+      order: 4;
+      /* overwrites align-items */
+      align-self: center;
+    }
+    /* selection by name */
+    body {
+      background-color: #008B8B;
+    }
+    h1 {
+      font-family: cursive;
+      font-size: 28pt;
+    }
+    /* selection by class */
+    .section1 {
+      font-family: sans-serif;
+      font-size: 20pt;
+    }
+    .section2 {
+      font-family: fantasy;
+      font-size: 20pt;
+    }
+    .paragraphe1 {
+      color: #D2691E;
+    }
+    .paragraphe2 {
+      color: #DC143C;
+    }
+    /* selection by id */
+    #list1 {
+      list-style-type:square;
+    }
+    #item1 {
+      font-style: italic;
+    }
+    #item2 {
+      font-style: normal;
+    }
+    #item3 {
+      font-style: oblique;
+    }
+
+  </style>
+  </head>
+  <body class="flex-container">
+    <div class="flex-item1">
+      <h1>First section</h1>
+      <p class="section1 paragraphe1">First paragraph</p>
+      <p class="section1 paragraphe2">Second paragraph</p>
+    </div>
+    <div class="flex-item2">
+      <h1>Second section</h1>
+      <p class="section2 paragraphe1">First paragraph</p>
+      <p class="section2 paragraphe2">Second paragraph</p>
+    </div>
+    <div class="flex-item3">
+      <h1>My favourite food</h1>
+      <ul id="list1">
+        <li id="item1">Burrito</li>
+        <li id="item2">Pizza</li>
+        <li id="item3">Spaghetti</li>
+      </ul>
+    </div>
+    <div class="flex-item4">
+      <!-- Inline styling -->
+      <img src="images/spaghetti.jpg" style="transform: rotate(0.25turn);">
+    </div>
+  </body>
+</html>
